@@ -1,4 +1,4 @@
-ud989-cat-clicker-ko-starter
+Knockout Js APP
 ============================
 
-ud989-cat-clicker-ko-starter
+A simple app using MVVC model, that fetches list from data model and updates in the view.
