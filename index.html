@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker-Premium Version</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="container">
+
+    <!-- List -->
+    <div id="basket">
+
+      <div id="list">
+        <ul data-bind="foreach: catList">
+          <li data-bind="text: name, click: $parent.setCat">
+          </li>
+        </ul>
+      </div>
+      <!-- Display -->
+    </div>
+    <div id = "display">
+      <div data-bind="with: currentCat">
+        <div class="row">
+          <div class="half-coulmn">
+            <span>Cat Name: </span><h2 data-bind="text: name"></h2>
+          </div>
+          <div class="half-coulmn">
+                  <span>Level:</span><h3 data-bind="text: level"></h3>
+          </div>
+        </div>
+
+
+        <div id="counter" data-bind="text: clickCount"></div>
+        <!-- <ul data-bind="foreach: nickNames">
+          <li data-bind="text: name">
+          </ul> -->
+          <img src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}" />
+        </div>
+      </div>
+  </div>
+
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
